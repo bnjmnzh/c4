@@ -28,14 +28,21 @@ export class BoardComponent implements OnInit {
   }
 
   makeMove(idx: number) {
-    if (!this.chips[idx]) {
-      this.chips.splice(idx, 1, this.player);
+    for (var i = 35 + (idx % 7); i >= 0 && this.chips[i] != null; i = i - 7) {
+      continue;
+    }
+    console.log(i);
+
+    if (i < 0) {
+      return;
+    } else {
+      this.chips.splice(i, 1, this.player);
       this.winner = this.calculateWinner(this.player);
       this.redIsNext = !this.redIsNext;
     }
   }
 
-  // theta(n^2) :^)
+  // theta(n) ;^)
   calculateWinner(player: string) {
     // Check horizontal
     for (let i = 0; i < 42; i = i + 7) {
