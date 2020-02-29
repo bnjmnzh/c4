@@ -3,13 +3,14 @@
 }
 
 h2 {
-    margin-top: 10px;
+    padding-top: 10px;
     margin-bottom: 10px;
     text-align: center;
 }
 
 button {
     position: relative;
+    font-size: 16px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 0);
@@ -20,7 +21,6 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, 0);
-    margin: 15px 0;
     display: grid;
     padding-left: 2px;
     padding-top: 10px;
@@ -28,7 +28,6 @@ main {
     grid-row-gap: 2px;
     grid-template-columns: repeat(7, 14%);
     grid-template-rows: repeat(6, 16%) auto;
-    background-color: #3498db;
     width: 70%;
     min-height: 85vh;
 }
