@@ -1,23 +1,40 @@
-h1 {
+* {
+    box-sizing: border-box;
+}
+
+h2 {
     margin-top: 10px;
     margin-bottom: 10px;
+    text-align: center;
+}
+
+button {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 main {
-    margin-top: 15px;
-    padding: 6px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: 15px 0;
     display: grid;
-    grid-template-columns: repeat(7, 100px);
-    grid-row-gap: 4px;
-    grid-column-gap: 4px;
+    padding-left: 2px;
+    padding-top: 10px;
+    grid-column-gap: 1px;
+    grid-row-gap: 2px;
+    grid-template-columns: repeat(7, 14%);
+    grid-template-rows: repeat(6, 16%) auto;
     background-color: #3498db;
-    width: 50%;
-    height: 50%;
+    width: 70%;
+    min-height: 85vh;
 }
 
 app-chip {
     border: 2px solid #3498db;
     background-color: white;
     border-radius: 50%;
-    height: 100px;
 }
