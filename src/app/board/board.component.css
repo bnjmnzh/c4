@@ -37,4 +37,5 @@ app-chip {
     border: 2px solid #3498db;
     background-color: white;
     border-radius: 50%;
+    width: 70%;
 }
